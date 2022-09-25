@@ -3,7 +3,7 @@ import { Component } from 'react'
 import './randomChar.scss';
 import mjolnir from '../../resources/img/mjolnir.png';
 import MarvelService from '../../services/MarvelService';
-import Spinner from '../spiner/Spinner'
+import Spinner from '../spinner/Spinner'
 import ErrorMessage from '../errorMessage/ErrorMessage';
 
 class RandomChar extends Component {
@@ -44,6 +44,7 @@ class RandomChar extends Component {
 
     updateChar = () => {
         const id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000); 
+        this.onCharLoading();
         this.marvelServise
             .getCharacter(id)
             .then(this.onCharLoaded)
