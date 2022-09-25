@@ -4,6 +4,7 @@ import Skeleton from '../skeleton/Skeleton'
 import Spinner from '../spinner/Spinner';
 import MarvelService from '../../services/MarvelService';
 import ErrorMessage from '../errorMessage/ErrorMessage';
+
 import './charInfo.scss';
 
 class CharInfo extends Component {
@@ -17,6 +18,7 @@ class CharInfo extends Component {
 
     componentDidMount() {
         this.updateChar()
+       
     }
 
     componentDidUpdate(prevProps, prevState) {
