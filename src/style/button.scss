@@ -104,4 +104,7 @@
     &:hover {
         transform: translateY(-5px);
     }
+    &:dusabled {
+        filter: grayscale(.5)
+    }
 }

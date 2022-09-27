@@ -1,5 +1,4 @@
 import { Component } from 'react';
-
 import Skeleton from '../skeleton/Skeleton'
 import Spinner from '../spinner/Spinner';
 import MarvelService from '../../services/MarvelService';
@@ -20,6 +19,7 @@ class CharInfo extends Component {
         this.updateChar()
        
     }
+
 
     componentDidUpdate(prevProps, prevState) {
         if (this.props.charId !== prevProps.charId) {
@@ -121,5 +121,7 @@ const View = ({ char }) => {
             </>
     )
 }
+
+
 
 export default CharInfo;
